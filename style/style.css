@@ -7,7 +7,7 @@
     margin: 0px;
     padding: 0px;    
   }
-  /* nav */
+  /* nav 1*/
   .nav{
     display: flex;
     justify-content: space-between;
@@ -62,12 +62,18 @@
   i{
     padding: 10px;
   }
-/* banner des. */
+/* banner des.2 */
 .banner-des{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;   
+    padding: 0px 100px; 
+     
+}
+.banner-text{
+  background-image: url('../images/Group\ 14.png');
+  padding: 80px 50px 50px 30px;
+  
 }
 .banner-text1{
     color: #0B0223;
@@ -75,6 +81,7 @@
    font-size: 48px;
    font-weight: 600;
    text-transform: uppercase;
+  
 }
 .banner-text2{
     text-align: center;
@@ -92,6 +99,7 @@ p{
     font-weight: 500;
     text-transform: lowercase; 
     margin: 10px;
+  
 }
 .banner-btn1{
     border-radius: 48px;
@@ -111,8 +119,250 @@ p{
     font-size: 20px;
     font-weight: 600;
 }
-.banner-img{ 
+.img1{ 
     width: 500px;
-    height: 90%;
-   
+    height: 90%; 
+}
+/* banner des.3 */
+.banner-des3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.img2{
+  width: 650px;
+  height: 90%;
+}
+.banner{
+  text-align: right;
+}
+.banner3-text1{
+  font-size: 2.6rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner3-text2{
+  color: #534C64;
+  font-size: 1.2rem; 
+  font-weight: 400;
+}
+.btn3{
+   padding: 21px 40px;
+   gap: 10px;
+   border-radius: 48px;
+   background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+   border: none;
+   color: #FFF;
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+/* Main Section online 4 */
+.online-text1{
+  color: #0B0223;
+text-align: center;
+font-size: 2.6rem;
+font-weight: 700;
+margin-top: 100px;
+}
+.online-span{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.online-text2{
+  color: #534C64;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.section-online{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 100px 30px 100px;
+
+}
+.online{
+  width: 200px;
+  height: 240px;
+}
+.img-online{
+  width: 200px;
+  height: 240px;
+  
+}
+.online-text{
+  color: #534C64;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+/* Main Section online 4 image button */
+ .img-hover{
+  position: relative;
+  
+}
+.img-online{
+  width: 200px;
+  height: 240px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 16px;
+    border: 3px solid red;
+    background-color: #121111;
+}
+
+.img-hover:hover .overlay {
+  opacity: 0.7;
+}
+.overlay-text{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  left: 50%;
+  top: 55%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+  background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+.icon {
+  color: rgb(97, 95, 95);
+  font-size: 40px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Section Play Instantly */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query */
+/* Mobile Devices */
+@media screen and (max-width:576px) {
+  .nav, .banner-des, .nav2, .nav2>ul, .banner-des3, .section-online{
+    flex-direction: column;
+  }
+  .banner-des{
+    flex-direction: column-reverse;
+  }
+  .nav2,.nav2>ul{
+    margin-top: 10px;
+    gap: 15px;
+  }
+  .btn1{
+    padding: 0px;
+  }
+  .img1{ 
+    width: 400px;
+    height: 80%; 
+}
+.img2{
+  width: 300px;
+  height: 60%;
+}
+.banner-text{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.banner{
+  text-align: center;
+}
+.banner-des3{
+  padding: 10px;
+}
+.online-text1{
+  font-size: 1.6rem;
+}
+.online-text2{
+  font-size: 0.70rem;
+}
+.online{
+  width: 210px;
+  height: 350px;
+}
+
+
+
+  
+}
+
+
+/* Tablets Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+  .banner-des, .nav, .banner-des3{
+    flex-direction: column;
+  }
+  .section-online{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .online{
+    width: 210px;
+    height: 350px;
+    margin: auto;
+  }
+  .nav{
+    gap: 20px;
+    align-items: center;
+  }
+  .btn1{
+    padding: 8px;
+  }
+  .banner-des{
+    flex-direction: column-reverse;
+  }
+  .img1{ 
+    width: 600px;
+    height: 100%; 
+}
+.banner-text{
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.banner{
+  text-align: center;
+}
+.banner-des3{
+  padding: 20px;
+}
+
+
+  
 }
