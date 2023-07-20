@@ -583,6 +583,19 @@ margin-bottom: -50px;
 .footer-h2{
   padding: 10px 265px 10px 265px;
   }
+   /*Section button*/
+.button9{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 80px 20px 80px 20px;
+
+}
+.button110{
+  font-size: 1rem;
+}
+
 
 
   
